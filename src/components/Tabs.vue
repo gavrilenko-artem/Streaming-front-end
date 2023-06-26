@@ -2,7 +2,7 @@
 import { Tab } from "../types/index";
 defineProps<{ tabs: Tab[]; activeTab: string }>();
 const emits = defineEmits<{
-  (e: "on-tab-change", tab: Tab): void;
+  'on-tab-change': [tab: string]
 }>();
 </script>
 

@@ -60,7 +60,7 @@ const route = useRoute();
       <h1 class="text-2xl font-weight-800 font-bold text-white">miniNetflix</h1>
     </div>
     <nav class="block">
-      <div class="relative flex flex-col w-30 p-10 space-y-8">
+      <div class="relative flex flex-col align-top w-30 p-10 space-y-8">
         <router-link
           v-for="{ to, name, icon, activeIcon } in menu"
           :to="to"
@@ -69,7 +69,7 @@ const route = useRoute();
             route.path === to
               ? 'text-white'
               : 'text-streamming-text hover:text-white',
-            'flex justify-start content-center flex-wrap',
+            'flex justify-start content-center flex-wrap items-center',
           ]"
         >
           <component
